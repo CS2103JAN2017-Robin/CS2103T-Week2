@@ -611,11 +611,31 @@ public class AddressBook {
     /**
      * Shows a message to the user
      */
-    private static void showToUser(String... message) {
-        for (String m : message) {
-            System.out.println(LINE_PREFIX + m);
-        }
+//    private static void showToUser(String... message) {
+//        for (String m : message) {
+//            System.out.println(LINE_PREFIX + m);
+//        }
+//    }
+    
+    private static void showToUser(String m) {
+        System.out.println(LINE_PREFIX + m);
     }
+    
+    private static void showToUser(String m1, String m2) {
+        showToUser(m1);
+        showToUser(m2);
+    }
+    
+    private static void showToUser(String m1, String m2, String m3) {
+        showToUser(m1, m2);
+        showToUser(m3);
+    }
+    
+    private static void showToUser(String m1, String m2, String m3, String m4, String m5) {
+        showToUser(m1, m2, m3);
+        showToUser(m4, m5);
+    }
+    
 
     /**
      * Shows the list of persons to the user.
